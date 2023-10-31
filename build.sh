@@ -67,6 +67,7 @@ GLOBAL_CSS="html, body {
         color: #333;
         background-color: #f4f4f4;
         outline: none;
+        background-color: #000;
     }
 
     button:disabled {
