@@ -1,11 +1,5 @@
-HTML=$(cat ./public/index.html)
-GLOBAL_CSS=$(cat ./public/global.css)
-
-# The public folder is cleared and the site is built
-rm -rf ./public
+# Rebuilds the site and pushes it to GitHub
 pnpm build
-echo "$HTML" >./public/index.html
-echo "$GLOBAL_CSS" >./public/global.css
 
 # The content in public is copied to the root of the site
 cp -r ./public/* ./
