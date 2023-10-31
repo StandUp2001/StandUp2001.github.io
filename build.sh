@@ -85,9 +85,9 @@ GLOBAL_CSS="html, body {
 
 # The public folder is cleared and the site is built
 rm -rf ./public
+pnpm build
 echo "$HTML" >./public/index.html
 echo "$GLOBAL_CSS" >./public/global.css
-pnpm build
 
 # The content in public is copied to the root of the site
 cp -r ./public/* ./
